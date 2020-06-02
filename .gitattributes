@@ -1,1 +1,2 @@
-*.dart -text diff=dart
+*.sh linguist-vendored
+*.go linguist-vendored

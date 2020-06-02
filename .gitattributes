@@ -1,4 +1,2 @@
-*.sh linguist-vendored
-*.yaml linguist-vendored
-*.lock linguist-vendored
-*.gif linguist-vendored
+*.dart linguist-detectable=true
+*.sh linguist-detectable=false

@@ -30,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String _device;
+  String _device = 'default size';
 
   Widget _button(DesktopDeviceName device) {
     return Container(

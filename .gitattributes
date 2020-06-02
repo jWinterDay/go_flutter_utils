@@ -1,2 +1,4 @@
 *.sh linguist-vendored
-*.go linguist-vendored
+*.yaml linguist-vendored
+*.lock linguist-vendored
+*.gif linguist-vendored

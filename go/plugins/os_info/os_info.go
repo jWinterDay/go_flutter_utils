@@ -34,11 +34,9 @@ func handleGetOsInfo(arguments interface{}) (reply interface{}, err error) {
 		panic(err)
 	}
 
-	resultMap := make(map[string]string)
+	return map[interface{}]interface{} {
+		"hostName":     hostName,
+	}, nil
 
-	resultMap["hostname"] = hostName
-
-	// log.Println("hostname:", hostName)
-
-	return resultMap, nil
+	return hostName, nil
 }

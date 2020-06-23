@@ -1,11 +1,11 @@
 import 'dart:io';
-import 'package:go_flutter_utils/go_flutter_utils.dart';
 
+import 'constants.dart';
 import 'device_info.dart';
 
 const String _kMethod = 'set_window_size';
 
-class DesktopUtils {
+class WindowSize {
   static Future<void> setDevice(DesktopDeviceName desktopDeviceName) async {
     assert(desktopDeviceName != null);
 

@@ -1,7 +1,9 @@
 package main
 
 import (
-	"desktop_utils"
+	"window_size"
+	"logger"
+	"os_info"
 
 	"github.com/go-flutter-desktop/go-flutter"
 	"github.com/go-flutter-desktop/go-flutter/plugin"
@@ -22,9 +24,15 @@ const (
 var options = []flutter.Option{
 	flutter.WindowInitialDimensions(InitW, InitH),
 
-	flutter.AddPlugin(&desktop_utils.DesktopUtilsFlutterPlugin{}),
+	// window size
+	flutter.AddPlugin(&window_size.WindowSizeFlutterPlugin{}),
+	// logger
+	flutter.AddPlugin(&logger.LoggerFlutterPlugin{}),
+	// os info
+	flutter.AddPlugin(&os_info.OsInfoFlutterPlugin{}),
 }
 
+// initial screen size
 type ScreenSizeSettings struct {
 	window *glfw.Window
 }

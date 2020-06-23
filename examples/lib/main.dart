@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:desktop_utils/desktop_utils.dart';
+import 'package:go_flutter_utils/go_flutter_utils.dart';
 
 void main() {
   runApp(MyApp());

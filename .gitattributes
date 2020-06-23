@@ -1,4 +1,0 @@
-*.dart linguist-detectable=true
-*.sh linguist-detectable=false
-*.json linguist-detectable=false
-Makefile text
